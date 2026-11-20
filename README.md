@@ -42,3 +42,7 @@ A plugin manifest cannot set `statusLine` (the plugin docs list no such key), wh
 ## Develop
 
 `node --test test/*.test.mjs` (also run by `pnpm test` from the repo root) and `claude plugin validate .`. Zero dependencies, Node 22.
+
+## Contributing and security
+
+This repository is a mirror; pull requests are proposals that get ported, never merged here. See [CONTRIBUTING.md](CONTRIBUTING.md). Report vulnerabilities privately, never in an issue: [SECURITY.md](SECURITY.md).

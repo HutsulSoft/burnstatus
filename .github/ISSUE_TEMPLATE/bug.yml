@@ -1,0 +1,59 @@
+name: Bug report
+description: Something in the plugin does not work as documented.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never paste a plugin key, Slack token, device code or the contents of `~/.claude/burnstatus/key`.**
+        Remove them from any output below. Security problems go to the Security tab, not here.
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version
+      description: The `version` field in `.claude-plugin/plugin.json`.
+      placeholder: 0.2.0
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: macOS 15.4 / Ubuntu 24.04
+    validations:
+      required: true
+  - type: input
+    id: claude-code
+    attributes:
+      label: Claude Code version
+      description: Output of `claude --version`.
+    validations:
+      required: true
+  - type: textarea
+    id: status
+    attributes:
+      label: Output of /burnstatus:status
+      description: Remove any key or token before pasting.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: debug
+    attributes:
+      label: Debug log (optional)
+      description: With `BURNSTATUS_DEBUG=1`, relevant lines from `~/.claude/burnstatus/debug.log`.
+      render: text
+  - type: checkboxes
+    id: no-secrets
+    attributes:
+      label: Check
+      options:
+        - label: I removed any key, token or device code from this report.
+          required: true
