@@ -1,0 +1,10 @@
+{
+  "name": "burnstatus",
+  "version": "0.2.0",
+  "description": "Show your Claude Code 5h and weekly limits in your Slack status",
+  "author": {
+    "name": "HutsulSoft"
+  },
+  "license": "MIT",
+  "keywords": ["slack", "rate-limits", "statusline"]
+}

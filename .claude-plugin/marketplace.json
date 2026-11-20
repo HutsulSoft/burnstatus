@@ -1,0 +1,14 @@
+{
+  "name": "burnstatus",
+  "description": "Claude Code limits in your Slack status",
+  "owner": {
+    "name": "HutsulSoft"
+  },
+  "plugins": [
+    {
+      "name": "burnstatus",
+      "source": ".",
+      "description": "Show your Claude Code 5h and weekly limits in your Slack status"
+    }
+  ]
+}
