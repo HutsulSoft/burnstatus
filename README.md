@@ -5,6 +5,8 @@ Without a connection the plugin does nothing. The Slack token never reaches your
 
 ## Install
 
+This repository is a mirror published from the HutsulSoft monorepo on every change. Commits made here are overwritten by the next sync, so please report problems as issues.
+
 ```
 /plugin marketplace add HutsulSoft/burnstatus
 /plugin install burnstatus@burnstatus
@@ -12,7 +14,6 @@ Without a connection the plugin does nothing. The Slack token never reaches your
 
 Shell form: `claude plugin marketplace add HutsulSoft/burnstatus`, then `claude plugin install burnstatus@burnstatus`.
 From a local clone: `claude plugin marketplace add <path to this folder>`.
-TODO-verify: the marketplace file lives in this plugin folder (`.claude-plugin/marketplace.json`, source `.`). `add HutsulSoft/burnstatus` only finds a marketplace at the repo root, so publish this folder as its own repo or add a root marketplace entry with a relative `source` to `./apps/burnstatus/plugin`.
 
 ## Setup
 
